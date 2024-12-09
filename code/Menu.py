@@ -22,7 +22,7 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Moutain", C_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "Mountain", C_ORANGE, ((WIN_WIDTH / 2), 70))
             self.menu_text(50, "Shooter", C_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
@@ -41,7 +41,7 @@ class Menu:
                     quit()  # end pygame
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_DOWN: # DONW KEY
+                    if event.key == pygame.K_DOWN: # DOWN KEY
                         if menu_option < len(MENU_OPTION) -1:
                             menu_option += 1
                         else:
